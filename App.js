@@ -1,8 +1,7 @@
-import { StyleSheet, Text, View } from "react-native";
-import Login from "./Auth/Login";
+import AppNavigator from "./Navigator/AppNavigator";
 
 const App = () => {
-  return <Login />;
+  return <AppNavigator />;
 };
 
 export default App;
