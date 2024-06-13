@@ -1,4 +1,5 @@
 import AppNavigator from "./Navigator/AppNavigator";
+import {useFonts} from "expo-font"
 
 const App = () => {
 
@@ -20,7 +21,7 @@ const App = () => {
   if (!fontsLoaded) {
     return null;
   }
-  
+
   return <AppNavigator />;
 };
 

@@ -3,7 +3,10 @@ const COLORS = {
     secondary: '#00FF00',
     tertiary: '#0000FF',
     white: "#fff",
-    borderTest: "#cc2232"
+    grey: "#959392",
+    lightgrey: "#ccc",
+    borderTest: "#cc2232",
+
 };
 
 export default COLORS;
