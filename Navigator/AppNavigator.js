@@ -1,21 +1,19 @@
-import { NavigationContainer } from "@react-navigation/native";
+
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import Login from "../Auth/Login";
-import Register from "../Auth/Register";
-import Onboard from "../Onboard/Onboard";
+// import Onboard from "../Onboard/Onboard";
+import Home from "../Home"
+import Profile from "../Profile";
 
 
 const Stack = createNativeStackNavigator();
 
 const AppNavigator = () => {
   return (
-    <NavigationContainer>
-      <Stack.Navigator initialRouteName="Login">
-        <Stack.Screen name="Login" component={Login} options={{headerShown: false}}/>
-        <Stack.Screen name="Register" component={Register} options={{headerShown: false}}/>
-        <Stack.Screen name="Onboard" component={Onboard} options={{headerShown: false}}/>
+      <Stack.Navigator initialRouteName="Home">
+        {/* <Stack.Screen name="Onboard" component={Onboard} options={{headerShown: false}}/> */}
+        <Stack.Screen name="Home" component={Home} options={{headerShown: false}}/>
+        <Stack.Screen name="Profile" component={Profile} options={{headerShown: false}}/>
       </Stack.Navigator>
-    </NavigationContainer>
   );
 };
 

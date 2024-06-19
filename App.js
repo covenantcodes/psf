@@ -1,4 +1,4 @@
-import AppNavigator from "./Navigator/AppNavigator";
+import RootNavigator from "./Navigator/RootNavigator";
 import {useFonts} from "expo-font"
 
 const App = () => {
@@ -22,7 +22,7 @@ const App = () => {
     return null;
   }
 
-  return <AppNavigator />;
+  return <RootNavigator />;
 };
 
 export default App;
