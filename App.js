@@ -1,5 +1,10 @@
 import RootNavigator from "./Navigator/RootNavigator";
-import {useFonts} from "expo-font"
+import {useFonts} from "expo-font";
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faComments, faBell} from "@fortawesome/free-regular-svg-icons";
+
+
+library.add( faBell, faComments)
 
 const App = () => {
 
